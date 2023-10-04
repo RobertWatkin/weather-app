@@ -7,7 +7,7 @@ import { WeatherService } from './weather.service';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'weather-app';
+  title = 'Weather App';
   weatherData: any;
 
   constructor(private weatherService: WeatherService) {}
