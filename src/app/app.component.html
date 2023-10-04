@@ -2,14 +2,14 @@
   <header class="text-center mb-4">
     <h1 class="text-3xl font-bold">{{ title }}</h1>
   </header>
-  
+
   <!-- Other components will be inserted here -->
-  <app-search></app-search>
-  <!-- <app-weather-display></app-weather-display> -->
+  <app-search (searchEvent)="onSearch($event)"></app-search>
+  <app-weather-display [weatherData]="weatherData"></app-weather-display>
   <!-- <app-forecast></app-forecast> -->
   <!-- <app-unit-toggle></app-unit-toggle> -->
   <!-- <app-error-display></app-error-display> -->
-  
+
   <footer class="text-center mt-4">
     <p class="text-sm text-gray-500">© 2023 Weather Dashboard</p>
   </footer>
